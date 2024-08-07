@@ -14,8 +14,6 @@ def total_vendas():
     resposta = {
         'Total de vendas': total_vendas
     }
-    return jsonify(resposta)
-
-
+    return  jsonify(resposta)
 
 app.run(host= '0.0.0.0')

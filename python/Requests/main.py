@@ -16,3 +16,4 @@ print(resposta.headers)
 
 #conteudo html da pagina
 # print(resposta.text)
+  

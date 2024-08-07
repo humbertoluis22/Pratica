@@ -28,7 +28,7 @@ def padrao_faz_tudo():
 def executar():
     padrao_faz_tudo()
 
-   
+     
 
 executar()
 

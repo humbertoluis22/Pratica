@@ -22,5 +22,7 @@ p = Pessoa()
 # p2= ['henrique', 'caio', 'geovanna', 'beatriz', 'fernanda']
 # print(p.pessoa == p2)   #utiliza o __eq__
 
-for i in range(len(p.pessoa)):
+for  i in range(len(p.pessoa)):
     print(p[i])
+
+      
