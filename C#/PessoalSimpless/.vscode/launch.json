@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "C#: Pessoa",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\Pessoa\\Pessoa.csproj",
+            "launchConfigurationId": "TargetFramework=;Pessoa"
+        }
+    ]
+}

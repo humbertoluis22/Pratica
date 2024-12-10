@@ -1,0 +1,15 @@
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.AssemblyInfoInputs.cache
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.AssemblyInfo.cs
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.csproj.CoreCompileInputs.cache
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.sourcelink.json
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\bin\Debug\net8.0\EstruturaDeDados.exe
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\bin\Debug\net8.0\EstruturaDeDados.deps.json
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\bin\Debug\net8.0\EstruturaDeDados.runtimeconfig.json
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\bin\Debug\net8.0\EstruturaDeDados.dll
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\bin\Debug\net8.0\EstruturaDeDados.pdb
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.dll
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\refint\EstruturaDeDados.dll
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.pdb
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\EstruturaDeDados.genruntimeconfig.cache
+C:\Users\Humberto\Desktop\Pratica\C#\EstruturaDeDados\EstruturaDeDados\obj\Debug\net8.0\ref\EstruturaDeDados.dll

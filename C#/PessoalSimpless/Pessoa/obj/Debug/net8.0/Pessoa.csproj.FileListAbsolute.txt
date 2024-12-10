@@ -1,0 +1,15 @@
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\bin\Debug\net8.0\Pessoa.exe
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\bin\Debug\net8.0\Pessoa.deps.json
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\bin\Debug\net8.0\Pessoa.runtimeconfig.json
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\bin\Debug\net8.0\Pessoa.dll
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\bin\Debug\net8.0\Pessoa.pdb
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.AssemblyInfoInputs.cache
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.AssemblyInfo.cs
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.csproj.CoreCompileInputs.cache
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.sourcelink.json
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.dll
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\refint\Pessoa.dll
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.pdb
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\Pessoa.genruntimeconfig.cache
+c:\Users\Humberto\Desktop\Pratica\C#\PessoalSimpless\Pessoa\obj\Debug\net8.0\ref\Pessoa.dll

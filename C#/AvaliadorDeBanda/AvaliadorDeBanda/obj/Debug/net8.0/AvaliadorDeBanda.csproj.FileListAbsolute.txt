@@ -1,0 +1,15 @@
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\bin\Debug\net8.0\AvaliadorDeBanda.exe
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\bin\Debug\net8.0\AvaliadorDeBanda.deps.json
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\bin\Debug\net8.0\AvaliadorDeBanda.runtimeconfig.json
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\bin\Debug\net8.0\AvaliadorDeBanda.dll
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\bin\Debug\net8.0\AvaliadorDeBanda.pdb
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.AssemblyInfoInputs.cache
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.AssemblyInfo.cs
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.csproj.CoreCompileInputs.cache
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.sourcelink.json
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.dll
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\refint\AvaliadorDeBanda.dll
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.pdb
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\AvaliadorDeBanda.genruntimeconfig.cache
+C:\Users\Humberto\Desktop\Pratica\C#\AvaliadorDeBanda\AvaliadorDeBanda\obj\Debug\net8.0\ref\AvaliadorDeBanda.dll

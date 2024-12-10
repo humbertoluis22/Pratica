@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+      background-color: white;
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form id="userForm">
+    <div class="container">
+      <h1>Usuario</h1>
+      <p>Informe algumas informações do usuario.</p>
+      <hr>
+
+      <label for="nome"><b>Nome</b></label>
+      <input type="text" placeholder="Digite o Nome" id="nome" required>
+
+      <label for="sobrenome"><b>Sobrenome</b></label>
+      <input type="text" placeholder="Digite o Sobrenome" id="sobrenome" required>
+
+      <label for="idade"><b>Idade</b></label>
+      <input type="text" placeholder="Digite a idade do usuario" id="idade" required>
+      <button type="submit" class="registerbtn" onclick="incluirUsuario()">Incluir</button>
+      <button type="submit" class="registerbtn" onclick="atualizarUsuario()">Atualizar</button>
+      <button type="submit" class="registerbtn" onclick="deletarUsuario()">Deletar</button>
+      <button type="submit" class="registerbtn" onclick="verificarUsuario()">Verificar Usuario</button>
+
+    </div>
+
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+
+  <script>
+    async function incluirUsuario(){
+      const nome = document.getElementById('nome').value;
+      const sobenome = document.getElementById('sobrenome').value;
+      const idade = document.getElementById('idade').value;
+
+      try {
+        const response = await fetch('http://127.0.0.1:5000/usuario', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ nome, sobenome, idade })
+        });
+        const result = await response.json();
+        alert(result.message);
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        alert('Erro ao incluir usuário: ' + error.message);
+      }
+
+    }
+
+
+    async function atualizarUsuario() {
+      const nome = document.getElementById('nome').value;
+      const sobrenome = document.getElementById('sobrenome').value;
+      const idade = document.getElementById('idade').value;
+
+      try {
+        const response = await fetch('http://127.0.0.1:5000/usuario', {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ nome, sobrenome, idade })
+        });
+
+        const result = await response.json();
+        alert(result.message);
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        alert('Erro ao atualizar usuário: ' + error.message);
+      }
+    }
+
+    async function deletarUsuario(){
+      const nome = document.getElementById('nome').value
+      try {
+        const response = await fetch('http://127.0.0.1:5000/usuario', {
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ nome })
+        })
+        const result = await response.json()
+        alert(result.message);
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        alert('Erro ao Excluir usuário: ' + error.message);
+      }
+
+    }
+
+    async function verificarUsuario() {
+      const nome = document.getElementById('nome').value
+      try {
+        const response = await fetch(`http://127.0.0.1:5000/usuario?nome=${nome}`, {
+          method: 'GET'
+        });
+
+        const result = await response.json();
+        if (response.status === 200) {
+          alert(`Nome: ${result.nome}, SobreNome : ${result.sobrenome} , Idade:${result.idade}`);
+        } else {
+          alert(result.message)
+        }
+      } catch (error) {
+        console.error('There was a problem with the fetch operation:', error);
+        alert('Erro ao verificar usuário: ' + error.message);
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
