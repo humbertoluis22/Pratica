@@ -10,9 +10,9 @@ usuarios =[]
 def incluir_usuario():
     data = request.get_json()
     if not data:
-        return jsonify({'message': 'Dados inválidos!'}), 400
+        return jsonify({'message': 'Dados inválidos!'}), 204
     usuarios.append(data)
-    return jsonify({'message':'Usuario com sucesso !!'}),201
+    return jsonify({'message':'Usuario com sucesso !!'}),200
 
 @app.route('/usuario', methods = ['PUT'])
 def atualizar_usuario():
@@ -21,7 +21,7 @@ def atualizar_usuario():
         if usuario['nome'] == data['nome']:
             usuario.update(data)
             return jsonify({'message':'Usuario atualizado com sucesso!'})
-    return jsonify({'message':'Usuario não encontrado!'}),404
+    return jsonify({'message':'Usuario não encontrado!'}),204
 
 @app.route('/usuario',methods=['DELETE'])
 def deletar_usuario():
