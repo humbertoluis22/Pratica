@@ -1,6 +1,9 @@
 import sqlite3
 import pandas as pd
 import os
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from decorators.decoradores import *
 
 
@@ -22,9 +25,12 @@ class Db_lite:
 
 
     def ler_tabela(self, nome_tabela):
-        df = pd.read_sql(f"SELECT * FROM  {nome_tabela}", self._conn)
+        try:
+            df = pd.read_sql(f"SELECT * FROM  {nome_tabela}", self._conn)
+        except Exception;
+            df = pd.DataFrame() 
         return df
-
+    
 
     @commit_e_close
     def update(
