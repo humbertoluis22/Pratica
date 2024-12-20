@@ -1,0 +1,54 @@
+Na parte do pyproject incluir na versao do python 
+```
+python = "^3.12.*" 
+
+```
+'*' (asterisco)  ->  Ira pegar todas as versao do python 3.12
+
+
+            ## nao rodar nada do curso pelo debug
+# para estudo nao utilizar o debug em vez disso 
+    -> Acessar o terminal 
+    -> Acessar a pasta fast_zero
+    -> comando para rodar a função :
+        - python -i caminho-do-arquivo com  a pasta
+        - chamar a função  -> read_root()
+
+
+# poetry
+    - poetry install na pasta que conheta pyproject.tomml -> cria venv
+    - poetry add -> adicionar lib
+    - poetry shell -> ativar a venv
+    - python nome_past\nome arquivo -> roda arquivo 
+    
+
+# servidor 
+- > para crar um servidor de desenvolvimento utilizar;
+    -> fastapi dev (dentro da venv) nome_pasta/nome_arquivo
+
+# libs para facilitar o desenvolvimetno 
+-> RUFF : um linter e formatador
+-> pytest : para escrevermos os teste
+-> taskipy : para nao termos que lembrar todos os comandos da aplicação
+
+# comando RUFF
+-> ruff check . -> ponto para sinalizar q é o arquivo atual, comando para validar sintaxe
+-> ruff format -> formata
+
+# pytest
+-> pytest : roda todos os arquivos teste
+-> pytest --cov: nome da pasta 
+
+-> coverage html : exibi uma pagina na web com as informações dos teste
+
+
+# comando taskipy
+escrevemos no project.toml '[tool.taskipy.tasks]' para podermos criar atalhos de 
+linha comando 
+
+retirei o 
+pre_test = 'task lint'
+pois nao to conseguindo executar os teste
+
+para exengerar todos os atalhos criados utilizamos o comando:
+    -> task --list
