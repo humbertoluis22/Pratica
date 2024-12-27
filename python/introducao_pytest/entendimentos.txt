@@ -1,0 +1,40 @@
+
+***********ESTRUTURA BASICA DO TESTE 
+    ETAPAS :
+        - GIVEN - DADO
+        - WHEN - QUANDO
+        - THEN - ENTÃO
+
+    - arange
+    - act
+    - aseert 
+
+*********** COMANDOS
+    pytest --pdb 
+    executa um debugue no teste
+
+    pytest -v
+        - verbose
+
+    pytest -k "NAME"
+        - roda os teste que contenham o name 
+
+    pytest -x
+        - para os teste assim que localizar um erro
+
+    pytest -s
+        - roda todos os print presente no codigo 
+        
+    pytest --junitxml report.xml
+        - gera um xml com o resultado dos testes
+        - neecssario utilizar para mercado
+
+    @mark."NAME"
+        - por padrao testes importantes ficam com marcaçãod e smoke
+        - marca um test com o nome 
+        - chamar o teste que contenha o mark com ;
+            - pytest -mark "name"
+            - pytest -mark "name" -v (versao verbosa)
+
+    @mark.skip 
+        - pular teste
