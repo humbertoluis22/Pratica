@@ -38,3 +38,13 @@
 
     @mark.skip 
         - pular teste
+
+    @mark.parametrize('parametro,resultado_esperaod',
+    [(1,3),(3,5),(5,7)])
+        - serve para realizar o mesmo teste varias vezes
+
+    @mark.xfail
+        - espera que dÊ errado
+
+    @mark.skipif
+        - pular teste de acordo com condição

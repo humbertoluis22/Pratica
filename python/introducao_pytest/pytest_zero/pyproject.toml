@@ -15,3 +15,8 @@ pytest-cov = "^6.0.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+markers = [
+    "smoke: marca para testes de fumaça"
+]
