@@ -52,3 +52,28 @@ pois nao to conseguindo executar os teste
 
 para exengerar todos os atalhos criados utilizamos o comando:
     -> task --list
+
+***Schemas
+-> sao 'contratos' 
+    ->  exemplo :
+        nome: str
+    -> informamos que o nome sempre vai ser uma string 
+
+-> response_model=UserPublic
+    -> estamos informando que o tipo de resposta que a chamada da função vai retornar é do tipo UserPublic
+    -> fazemos isso para nao retornar um parametro de um outro schema no qual nao pode ser visivel para o usuario 
+    -> exemplo senhas 
+
+-> pydantic *Schemas
+    ->EmailStr
+        -> informa que o tipo do  parametro do schema é uma string de email
+
+-> modeldump
+    -> transforma um objeto de schame em um dicionario 
+
+***geral 
+-> breakpoint()
+    -> adiciona um pause break na api pra quando ela for chamada
+
+
+-> o pytest executa os teste por ordem alfabetica

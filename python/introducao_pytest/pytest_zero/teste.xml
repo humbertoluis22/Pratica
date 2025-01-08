@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="1" failures="5" skipped="1" tests="25" time="0.100"
+        timestamp="2024-12-28T16:39:15.820472-03:00" hostname="PCHumberto">
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_1_entao_retornar_1" time="0.001" />
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_2_entao_retornar_2" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_3_entao_retornar_queijo" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_5_entao_retornar_goiabada" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_10_entao_retornar_goiabada" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_20_entao_retornar_goiabada" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_quando_brincadeira_receber_0_entao_retornar_none" time="0.000">
+            <skipped type="pytest.skip" message="vai falhar pq ainda nao implementei o meu teste">C:\Users\Humberto\Desktop\Pratica\python\introducao_pytest\pytest_zero\tests\test_pytest.py:34:
+                vai falhar pq ainda nao implementei o meu teste</skipped>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_goiabada_com_multiplos_de_5[5]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_goiabada_com_multiplos_de_5[10]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_goiabada_com_multiplos_de_5[20]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_goiabada_com_multiplos_de_5[25]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_goiabada_com_multiplos_de_5[35]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_queijo_com_multiplos_de_3[3]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_queijo_com_multiplos_de_3[6]" time="0.001">
+            <failure
+                message="AssertionError: assert 'goiabada' == 'queijo'&#10;  &#10;  - queijo&#10;  + goiabada">entrada
+                = 6
+
+                @mark.queijo
+                @mark.parametrize(
+                'entrada',
+                [3,6,9,12,15]
+                )
+                def test_brincadeira_deve_retornar_queijo_com_multiplos_de_3(entrada):
+                &gt; assert brincadeira(entrada) == 'queijo'
+                E AssertionError: assert 'goiabada' == 'queijo'
+                E
+                E - queijo
+                E + goiabada
+
+                tests\test_pytest.py:54: AssertionError</failure>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_queijo_com_multiplos_de_3[9]" time="0.001">
+            <failure
+                message="AssertionError: assert 'goiabada' == 'queijo'&#10;  &#10;  - queijo&#10;  + goiabada">entrada
+                = 9
+
+                @mark.queijo
+                @mark.parametrize(
+                'entrada',
+                [3,6,9,12,15]
+                )
+                def test_brincadeira_deve_retornar_queijo_com_multiplos_de_3(entrada):
+                &gt; assert brincadeira(entrada) == 'queijo'
+                E AssertionError: assert 'goiabada' == 'queijo'
+                E
+                E - queijo
+                E + goiabada
+
+                tests\test_pytest.py:54: AssertionError</failure>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_queijo_com_multiplos_de_3[12]" time="0.001">
+            <failure
+                message="AssertionError: assert 'goiabada' == 'queijo'&#10;  &#10;  - queijo&#10;  + goiabada">entrada
+                = 12
+
+                @mark.queijo
+                @mark.parametrize(
+                'entrada',
+                [3,6,9,12,15]
+                )
+                def test_brincadeira_deve_retornar_queijo_com_multiplos_de_3(entrada):
+                &gt; assert brincadeira(entrada) == 'queijo'
+                E AssertionError: assert 'goiabada' == 'queijo'
+                E
+                E - queijo
+                E + goiabada
+
+                tests\test_pytest.py:54: AssertionError</failure>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_queijo_com_multiplos_de_3[15]" time="0.000">
+            <failure
+                message="AssertionError: assert 'goiabada' == 'queijo'&#10;  &#10;  - queijo&#10;  + goiabada">entrada
+                = 15
+
+                @mark.queijo
+                @mark.parametrize(
+                'entrada',
+                [3,6,9,12,15]
+                )
+                def test_brincadeira_deve_retornar_queijo_com_multiplos_de_3(entrada):
+                &gt; assert brincadeira(entrada) == 'queijo'
+                E AssertionError: assert 'goiabada' == 'queijo'
+                E
+                E - queijo
+                E + goiabada
+
+                tests\test_pytest.py:54: AssertionError</failure>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_esperado_com_entrada[1-1]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_esperado_com_entrada[2-2]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_esperado_com_entrada[3-queijo]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_esperado_com_entrada[4-4]" time="0.000">
+            <failure
+                message="AssertionError: assert 'queijo' == 4&#10; +  where 'queijo' = brincadeira(4)">entrada
+                = 4, esperado = 4
+
+                @mark.brincadeira
+                @mark.parametrize(
+                'entrada,esperado',
+                [(1,1),(2,2),(3,'queijo'),(4,4),(5,'goiabada')]
+                )
+                def test_brincadeira_deve_retornar_esperado_com_entrada(entrada,esperado):
+                &gt; assert brincadeira(entrada) == esperado
+                E AssertionError: assert 'queijo' == 4
+                E + where 'queijo' = brincadeira(4)
+
+                tests\test_pytest.py:63: AssertionError</failure>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira_deve_retornar_esperado_com_entrada[5-goiabada]" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_1brincadeira_deve_retornar_4_se_receber_4" time="0.000" />
+        <testcase classname="tests.test_pytest"
+            name="test_2brincadeira_deve_retornar_4_se_receber_4" time="0.000">
+            <error
+                message="failed on setup with &quot;Failed: Error evaluating 'skipif': you need to specify reason=STRING when using booleans as conditions.&quot;">Error
+                evaluating 'skipif': you need to specify reason=STRING when using booleans as
+                conditions.</error>
+        </testcase>
+        <testcase classname="tests.test_pytest"
+            name="test_brincadeira2_deve_imprimir_entrei_na_brincaideira" time="0.000" />
+    </testsuite>
+</testsuites>
