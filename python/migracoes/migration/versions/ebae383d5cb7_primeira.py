@@ -23,7 +23,7 @@ def upgrade() -> None:
         'pessoa',
         sa.Column('id',sa.Integer(),primary_key=True,autoincrement=True),
         sa.Column('nome',sa.String(length=50),nullable=False),
-        sa.Column('email',sa.String(length=50),nullable=False)
+        sa.Column('senha',sa.String(length=50),nullable=False)
         )
 
 

@@ -16,7 +16,7 @@ python = "^3.12.*"
 
 
 # poetry
-    - poetry install na pasta que conheta pyproject.tomml -> cria venv
+    - poetry install na pasta que conheça pyproject.tomml -> cria venv
     - poetry add -> adicionar lib
     - poetry shell -> ativar a venv
     - python nome_past\nome arquivo -> roda arquivo 
