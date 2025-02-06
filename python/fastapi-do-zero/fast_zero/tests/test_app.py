@@ -1,6 +1,6 @@
 from http import HTTPStatus
 from pytest import mark
-
+from fast_zero.schemas import UserPublic
 
 @mark.primeiro_teste
 def test_read_root_deve_retornar_ok_e_ola_mundo(client):
@@ -30,14 +30,23 @@ def test_create_user(client):
     }
 
 
+@mark.user
 def test_read_users(client):
     response = client.get("/users/")
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {
-        "users": [{"user": "humberto", "email": "humberto@hotmail.com", "id": 1}]
+        "users": []
     }
 
-
+@mark.user
+def test_read_users_with_user(client,user):
+    response = client.get("/users/")
+    user_schema = UserPublic.model_validate(user).model_dump()
+    
+    assert response.status_code == HTTPStatus.OK
+    assert response.json() == {
+        "users":  [user_schema]
+    }
 
 def test_read_users_id(client):
     response = client.get("/users/1")
