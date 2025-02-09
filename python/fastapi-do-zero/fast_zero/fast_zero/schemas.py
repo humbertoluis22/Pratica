@@ -2,6 +2,7 @@ from pydantic import BaseModel,EmailStr,ConfigDict
 
 class Message(BaseModel):
     message:str
+    model_config = ConfigDict(from_attributes=True)
 
 
 class UserSchema(BaseModel):

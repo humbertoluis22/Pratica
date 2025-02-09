@@ -21,7 +21,7 @@ def client(session):
 
         yield client
 
-    app.dependency_overrides.clear()
+    return app.dependency_overrides.clear()
 
 
 @pytest.fixture
@@ -36,6 +36,7 @@ def session():
     with Session(engine) as session:
         yield session
 
+    session.close()
     table_registry.metadata.drop_all(engine)
 
 
