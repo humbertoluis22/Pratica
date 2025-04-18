@@ -1,0 +1,6 @@
+@ConexaoCodeFirst_HostAddress = http://localhost:5095
+
+GET {{ConexaoCodeFirst_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

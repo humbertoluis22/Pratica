@@ -3,6 +3,8 @@ from fastapi.testclient import TestClient
 from fast_zero.app import app
 from fast_zero.database import get_session
 
+import factory
+
 from sqlalchemy import create_engine
 from fast_zero.models import table_registry,User
 from sqlalchemy.orm import Session
@@ -11,6 +13,15 @@ from fast_zero.security import get_password_hash
 from sqlalchemy.pool import StaticPool
 from datetime import datetime
 
+
+class UserFactory(factory.Factory):
+    class Meta: 
+        model = User
+
+    username = factory.sequence(lambda n : f'test{n}') 
+    email =  factory.LazyAttribute(lambda obj : f'{obj.username}@test.com')
+    password = factory.LazyAttribute(lambda obj : f'{obj.username}+senha')
+    update_at = datetime.now()
 
 @pytest.fixture
 def client(session):
@@ -44,18 +55,30 @@ def session():
 @pytest.fixture
 def user(session:Session):
     pwd = 'testtest'
-    user = User(
-        username="Teste",
-        email="teste@test.com",
+    user = UserFactory(
         password=get_password_hash(pwd) ,
-        update_at=datetime.now())
-    
+    )
     session.add(user)   
     session.commit()
     session.refresh(user)
 
     user.clean_password = pwd #monkey patch
     return user
+
+
+@pytest.fixture
+def other_user(session:Session):
+    pwd = 'testtest'
+    user = UserFactory(
+        password=get_password_hash(pwd) ,
+    )
+    session.add(user)   
+    session.commit()
+    session.refresh(user)
+
+    user.clean_password = pwd #monkey patch
+    return user
+
 
 @pytest.fixture
 def token(client,user):

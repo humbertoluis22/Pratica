@@ -1,0 +1,42 @@
+[
+  {
+    "ContainingType": "PraticaDeConexao.Controllers.FuncionarioController",
+    "Method": "RecolherFuncionarios",
+    "RelativePath": "api/Funcionario/Funcionario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PraticaDeConexao.Models.FuncionarioModel, PraticaDeConexao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PraticaDeConexao.Controllers.ProdutoController",
+    "Method": "RecolherProdutos",
+    "RelativePath": "api/Produto/Produtos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PraticaDeConexao.Models.ProdutoModel, PraticaDeConexao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
